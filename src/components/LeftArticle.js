@@ -1,11 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Red from "../images/Red.svg"
-import Yellow from "../images/Yellow.svg"
-import Green from "../images/Green.svg"
-import SmallGreen from "../images/SmallGreen.svg"
-import SmallRed from "../images/SmallRed.svg"
-import SmallYellow from "../images/SmallYellow.svg"
 
 const LeftArticleWrapper = styled.div`
     max-width: 70vw;
@@ -173,28 +167,12 @@ const ArticleAuthor = styled(ArticleInfo)`
 `;
 
 const LeftArticle = ({ 
-    article,
-    color
+    article
 }) => {
-    var background
-    var titleb
-    if (color === 0) {
-        background = Yellow
-        titleb = SmallGreen
-    } else if (color === 1) {
-        background = Green
-        titleb = SmallRed
-    } else if (color === 2) {
-        background = Red
-        titleb = SmallYellow
-
-    }
-    console.log(article);
     return (
         <LeftArticleWrapper>     
             <Column>
                 <MainImage>
-                    <img alt={article.article_title} src={background}/>
                     <ArticleImage>
                         <img src={article.image_url}/>
                     </ArticleImage>
@@ -202,7 +180,6 @@ const LeftArticle = ({
             </Column>
             <Column>
                 <TitleImage>
-                    <img alt={article.article_title} src={titleb}/>
                     <ArticleTitle>{article.article_title}</ArticleTitle>
                 </TitleImage>
                 <ArticleAuthor>

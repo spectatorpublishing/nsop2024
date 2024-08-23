@@ -19,13 +19,13 @@ const App = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/uni-news" element={<Section id="uni-news" header="UNIVERSITY NEWS" articles={university_news_articles}/>} />
-        <Route path="/city-news" element={<Section id="city-news" header="CITY NEWS" articles={city_news_articles} />} />
-        <Route path="/opinion" element={<Section id="opinion" header="OPINION" articles={opinion_articles} />} />
-        <Route path="/a&c" element={<Section id="a&c" header="ARTS & CULTURE" articles={ac_articles} />} />
-        <Route path="/sports" element={<Section id="sports" header="SPORTS" articles={sports_articles} />} />
-        <Route path="/audio" element={<Section id="audio" header="AUDIO" articles={audio_articles} />} />
-        <Route path="/spectrum" element={<Section id="spectrum" header="SPECTRUM" articles={spectrum_articles} />} />
+        <Route path="/uni-news" element={<Section id="uni-news" header="University News" articles={university_news_articles}/>} />
+        <Route path="/city-news" element={<Section id="city-news" header="City News" articles={city_news_articles} />} />
+        <Route path="/opinion" element={<Section id="opinion" header="Opinion" articles={opinion_articles} />} />
+        <Route path="/a&c" element={<Section id="a&c" header="Arts & Culture" articles={ac_articles} />} />
+        <Route path="/sports" element={<Section id="sports" header="Sports" articles={sports_articles} />} />
+        <Route path="/audio" element={<Section id="audio" header="Audio" articles={audio_articles} />} />
+        <Route path="/spectrum" element={<Section id="spectrum" header="Spectrum" articles={spectrum_articles} />} />
       </Routes>
     </BrowserRouter>
   );

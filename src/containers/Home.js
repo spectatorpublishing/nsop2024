@@ -4,12 +4,11 @@ import Letter from '../containers/LetterEditor';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
-import SpecLogoHeader from '../components/SpecLogoHeader';
 
 const HomeContainer = styled.div`
     width: 100%;
     height: 100%;
-    background: #4F3850;
+    background: #8FB8FE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,74 +27,19 @@ const Photo = styled.div`
     margin-left: 7.3%;
     position: relative;
     z-index: 3;
+    border: 0.4rem white solid;
 `;
 
 const Title = styled.div`
     display: flex; 
-    align-content: center;
-    color: #F4D1D8;
-    font-family: 'Black Han Sans';
-    font-weight: 400;
+    margin: 3rem;
+    color: #665B56;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
     line-height: 1;
-    font-size: 12.5vw;
-    text-align: right;
+    font-size: 6vw;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
 `;
-
-const MiddlePhoto = styled.img`
-    z-index: 3;
-    display: flex;
-    justify-content: flex-end;
-    width: 17%;
-    position: absolute;
-    margin-top: -175rem;
-    right: 0;
-    @media only screen and (max-width: 1200px){
-        margin-top: -195rem;
-    }
-    @media only screen and (max-width: 1023px){
-        margin-top: -155rem;
-    }
-    @media only screen and (max-width: 768px){
-        margin-top: -280rem;
-    }
-    @media only screen and (max-width: 610px){
-        margin-top: -270rem;
-    }
-    @media only screen and (max-width: 540px){
-        margin-top: -260rem;
-    }
-`
-const TopLeftPhoto = styled.img`
-    z-index: 0;
-    display: flex;
-    width: 18%;
-    position: absolute;
-    margin-top: 30%;
-    left: 0;
-`
-const TopRightPhoto = styled.img`
-    z-index: 0;
-    display: flex;
-    width: 22%;
-    position: absolute;
-    margin-top: 11%;
-    right: 21.5%;
-`
-
-const BottomLeftPhoto = styled.img`
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    width: 17%;
-`
-const BottomRightPhoto = styled.img`
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    width: 17%;
-`
 
 const HomeSectionContainer = styled.div`
     z-index: 2;
@@ -117,13 +61,13 @@ const HomeSectionContainer = styled.div`
 `
 
 const Home = () => {
-
     return (
         <HomeContainer>
                 <MobileNavBar/>
                 <NavBar/>
+                <Title>Welcome to Columbia!</Title>
                 <Wrapper>
-                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7OD7D4SIKJFY5BVS5CUFSJBBU4.jpg" alt = "NSOP graphic" width = "83%"></img></Photo>
+                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BBMUUMI72FCNJPRQCHM4JOTPQ4.tiff" alt = "NSOP graphic" width = "100%"></img></Photo>
                 </Wrapper>
                 <HomeSectionContainer>
                     <Letter/>
