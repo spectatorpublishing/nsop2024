@@ -16,7 +16,7 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     background: #8FB8FE;
-    padding: 3rem 0rem;
+    padding: 3rem 0rem 0rem;
 `;
 
 const BackgroundContainer = styled.img`
@@ -86,7 +86,7 @@ const Section = ({ header, articles }) => {
                         <MiddleArticles articles={middleArticles} />
                     }
                     {lastArticles &&
-                        <LastArticles articles={lastArticles} />
+                        <LastArticles articles={lastArticles} fabric={articles.length % 2 === 1}/>
                     }
                 </ArticlesContainer>
             </Container>

@@ -64,8 +64,8 @@ const Title = styled.div`
 const Home = () => {
     return (
         <Container>
+            <MobileNavBar/>
             <HomeContainer>
-                <MobileNavBar/>
                 <NavBar/>
                 <Title>Welcome to Columbia!</Title>
                 <Wrapper>

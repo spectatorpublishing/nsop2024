@@ -3,12 +3,13 @@ import styled from "styled-components";
 import CrumpledPaper from '../images/CrumpledPaper.jpeg';
 import Card from '../images/Card.png';
 import Bug from '../images/LanternFly.png';
+import Fabric from '../images/Fabric.png';
 
 const Wrapper = styled.div`
     z-index: 5;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10rem;
+    height: 50rem;
     @media screen and (max-width: 1023px) {
         width: 100%;
         max-width: 90vw;
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
 const InfoCardBorder = styled.div`
     padding: 1rem;
     width: 30vw;
-    height: 35%;
+    height: 25%;
     background-size: cover;
     @media screen and (max-width: 1023px) {
         width: 100%;
@@ -36,10 +37,11 @@ const InfoCard = styled.div`
 `;
 const MainImage = styled.div`
     width: 30vw;
-    height: 70%;
+    height: 50%;
     border: 0.5rem white solid;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
 
     img {
         width: 100%;
@@ -139,12 +141,14 @@ const BugImg = styled.img`
 
 const LastArticles = ({ 
     articles,
+    fabric
 }) => {
     return (
-        <Wrapper>     
+        <Wrapper style={{backgroundImage: (fabric ? `url(${Fabric})` : ''), backgroundSize: 'cover'}}>     
             {articles.map((article, index) => 
-                <div style={{position: 'relative', marginTop: '5rem'}}>
+                <div style={{position: 'relative', marginTop: '10rem'}}>
                     {index === 1 ? <BugImg src={Bug} /> : ''}
+                    <a style={{textDecoration:'none'}} href={article.article_link}>
                     <MainImage>
                         <img src={article.image_url} />
                     </MainImage>
@@ -158,6 +162,7 @@ const LastArticles = ({
                             </ArticleAuthor>
                         </InfoCard>
                     </InfoCardBorder>
+                    </a>
                 </div>
             )}
         </Wrapper>
