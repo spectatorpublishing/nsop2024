@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Crumpled from '../images/CrumpledPaper.jpeg';
 import Card from '../images/Card.png';
 import Fabric from '../images/Fabric.png';
+import Crown from '../images/Crown.png';
 
 const Wrapper = styled.div`
     position: relative;
@@ -29,6 +30,15 @@ const BackgroundImage = styled.img`
     }
 `;
 
+const CrownImg = styled.img`
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    transform: rotate(20deg);
+    width: 13%;
+    height: 13%;
+`;
+
 const LetterWrapper = styled.div`
     z-index: 5;
     padding: 5rem 8rem;
@@ -42,6 +52,7 @@ const LetterEditor = () => {
     return (
         <Wrapper>
             <BackgroundImage src={Fabric} />
+            <CrownImg src={Crown} />
             <LetterBackground style={{backgroundImage: `url(${Crumpled})`}}>
                 <LetterWrapper style={{backgroundImage: `url(${Card})`}}>
                     <Title>Letter From The Editor</Title>

@@ -60,24 +60,6 @@ const Title = styled.div`
     z-index: 5;
 `;
 
-const HomeSectionContainer = styled.div`
-    z-index: 2;
-    background-color: rgba(33,33,33,0.5);
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
-    @media only screen and (max-width: 1400px){
-        margin-left: 3.5rem;
-        margin-right: 3.5rem;
-    }
-    @media only screen and (max-width: 1023px){
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-    }
-    @media only screen and (max-width: 768px){
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-`
 
 const Home = () => {
     return (
