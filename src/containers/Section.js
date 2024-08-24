@@ -17,7 +17,6 @@ const Container = styled.div`
     height: 100%;
     background: #8FB8FE;
     padding: 3rem 0rem;
-    z-index: 5;
 `;
 
 const BackgroundContainer = styled.img`
@@ -59,14 +58,15 @@ const ArticlesContainer = styled.div`
     align-items: left;
     padding-top: 25px;
     z-index: 5;
-        @media screen and (min-width: 1024px) {
-            padding-left: 20px;
-        }
-        @media screen and (max-width: 1023px) {
-            margin: 0px;
-            display: flex;
-            align-items: center;
-        }
+
+    @media screen and (min-width: 1024px) {
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 1023px) {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+    }
 `;
 
 const Section = ({ header, articles }) => {
@@ -76,7 +76,7 @@ const Section = ({ header, articles }) => {
                 <NavBar />
                 <MobileNavBar />
                 <HeaderDiv>
-                    {header}
+                    <div style={{zIndex: 5}}>{header}</div>
                 </HeaderDiv>
                 <ArticlesContainer>
                     {articles.map((article, index) => (

@@ -18,7 +18,6 @@ const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 3rem 0rem;
-    z-index: 5;
 `;
 
 const BackgroundContainer = styled.img`
@@ -51,7 +50,6 @@ const Photo = styled.div`
 `;
 
 const Title = styled.div`
-    display: flex; 
     color: #665B56;
     font-family: "Fraunces", serif;
     font-weight: 900;
@@ -91,10 +89,8 @@ const Home = () => {
                 <Wrapper>
                     <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BBMUUMI72FCNJPRQCHM4JOTPQ4.tiff" alt = "NSOP graphic" width = "100%"></img></Photo>
                 </Wrapper>
-                <HomeSectionContainer>
-                    <Letter/>
-                    <Credits/>
-                </HomeSectionContainer>
+                <Letter/>
+                <Credits/>
             </HomeContainer>
             <BackgroundContainer src={Background} />
         </Container>

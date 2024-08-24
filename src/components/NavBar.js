@@ -18,7 +18,7 @@ const NavWrapper = styled.div`
 `;
 
 const VertNav = styled.div`
-    right: 4vw;
+    right: 1vw;
     top: 3rem;
     z-index:100;
     padding:1rem 0rem;
