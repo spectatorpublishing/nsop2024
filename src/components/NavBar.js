@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {sections} from '../data/sections';
 import { NavHashLink } from 'react-router-hash-link';
 import SpecLogoHeader from './SpecLogoHeader';
+import Crumpled from '../images/CrumpledPaper.jpeg';
 
 const NavWrapper = styled.div`
     a {
@@ -13,6 +14,7 @@ const NavWrapper = styled.div`
     }
     top:0;
     position: sticky;
+    z-index: 6;
 `;
 
 const VertNav = styled.div`
@@ -30,21 +32,21 @@ const Tab = styled.a`
     width: fit-content;
     justify-content: flex-end;
     margin-left: auto;
-    border-radius: 20px;
-    color: ${props => props.currentSection ? '#F4D1D8' : '#F9B71A'};
-    font-weight: ${props => props.currentSection ? 900 : 400};
-    background-color: ${props => props.currentSection ? 'rgba(244, 209, 216, 0.2)' : '#4F3850'};
+    color: #F2F2F2;
+    background-color: ${props => props.currentSection ? 'rgba(244, 209, 216, 0.2)' : ''};
+    margin-right: ${props => props.currentSection ? '1.5rem' : ''};
     padding: 0.85rem 1.25rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     :hover {
-        color: #F4D1D8;
         cursor:pointer;
     }
 `;
 
 const NavText = styled.div`
     font-style: normal;
-    margin-right:1.5rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-shadow: -2px 0 #6C6C6C, 0 2px #6C6C6C, 2px 0 #6C6C6C, 0 -2px #6C6C6C;
     text-transform: uppercase;
 `;
 
@@ -56,7 +58,7 @@ const NavBar = () => {
             <SpecLogoHeader />
             {sections.map((section, index) => (
                 <NavHashLink smooth to={section.url}>
-                    <Tab currentSection = {window.location.pathname === section.url} key={index}>
+                    <Tab currentSection = {window.location.pathname === section.url} key={index} style={{backgroundImage: `${window.location.pathname === section.url ? `url(${Crumpled})` : ''}`, backgroundSize: 'cover'}}>
                         <NavText>{section.title}</NavText>
                     </Tab>
                 </NavHashLink>
