@@ -75,6 +75,15 @@ const MainImage = styled.div`
     }
 `;
 
+const CrownImg = styled.img`
+    position: absolute;
+    bottom: 8%;
+    right: 14%;
+    transform: rotate(20deg);
+    width: 10rem;
+    height: 10rem;
+`;
+
 
 const ArticleTitle = styled.div`
     color: #665B56;
@@ -165,6 +174,7 @@ const RightArticle = ({
                     <img src={article.image_url}/>
                 </MainImage>
             </Column>
+            <CrownImg src={Crown} />
         </RightArticleWrapper>
     );
 }

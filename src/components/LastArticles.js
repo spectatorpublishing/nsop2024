@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import CrumpledPaper from '../images/CrumpledPaper.jpeg';
 import Card from '../images/Card.png';
+import Bug from '../images/LanternFly.png';
 
 const Wrapper = styled.div`
-    width: 85vw;
-    height: 82vh;
-    margin: 15px;
-    position: relative;
     z-index: 5;
-
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
     @media screen and (max-width: 1023px) {
         width: 100%;
         max-width: 90vw;
@@ -18,10 +17,29 @@ const Wrapper = styled.div`
     }
 `;
 
+const InfoCardBorder = styled.div`
+    padding: 1rem;
+    width: 30vw;
+    height: 35%;
+    background-size: cover;
+    @media screen and (max-width: 1023px) {
+        width: 100%;
+    }
+`;
+
+const InfoCard = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`;
 const MainImage = styled.div`
-    width: 90%;
-    height: 90%;
+    width: 30vw;
+    height: 70%;
     border: 0.5rem white solid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     img {
         width: 100%;
@@ -37,40 +55,13 @@ const MainImage = styled.div`
     @media screen and (max-width: 768px) {
         max-width: 100%;
         max-height: 100%;
-
-        img {
-            margin: 0px 0px 0px 0px;
-        }
     }
 `;
 
-const InfoCardBorder = styled.div`
-    position: absolute;
-    bottom: 1%;
-    right: 0%;
-    padding: 1rem;
-    width: 35%;
-    height: 23%;
-    background-size: cover;
-    @media screen and (max-width: 1023px) {
-        width: 100%;
-    }
-`;
-
-const InfoCard = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`;
 
 const ArticleTitle = styled.div`
-    display: flex;
-    flex-direction: column;
     color: #665B56;
     font-family: "Fraunces", serif;
-    font-size: 6vw;
     text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
     font-style: normal;
     font-weight: 900;
@@ -136,25 +127,39 @@ const ArticleAuthor = styled.div`
     }
 `;
 
+const BugImg = styled.img`
+    position: absolute;
+    top: -10%;
+    right: 14%;
+    transform: rotate(10deg);
+    width: 10rem;
+    height: 10rem;
+`;
+
+
 const LastArticles = ({ 
     articles,
 }) => {
     return (
         <Wrapper>     
-            {/* <MainImage>
-                <img src={article.image_url} />
-            </MainImage>
-            <InfoCardBorder style={{ backgroundImage: `url(${CrumpledPaper})` }}>
-                <InfoCard style={{ backgroundImage: `url(${Card})` }}>
-                    <ArticleTitle>
-                        {article.article_title}
-                    </ArticleTitle>
-                    <ArticleAuthor>
-                        {article.article_authors}
-                    </ArticleAuthor>
-                </InfoCard>
-            </InfoCardBorder> */}
-            here
+            {articles.map((article, index) => 
+                <div style={{position: 'relative', marginTop: '5rem'}}>
+                    {index === 1 ? <BugImg src={Bug} /> : ''}
+                    <MainImage>
+                        <img src={article.image_url} />
+                    </MainImage>
+                    <InfoCardBorder style={{ backgroundImage: `url(${CrumpledPaper})` }}>
+                        <InfoCard style={{ backgroundImage: `url(${Card})` }}>
+                            <ArticleTitle>
+                                {article.article_title}
+                            </ArticleTitle>
+                            <ArticleAuthor>
+                                {article.article_authors}
+                            </ArticleAuthor>
+                        </InfoCard>
+                    </InfoCardBorder>
+                </div>
+            )}
         </Wrapper>
     );
 }
