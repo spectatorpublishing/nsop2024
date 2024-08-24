@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import NavBar from '../components/NavBar';
 import MobileNavBar from '../components/MobileNavBar';
 import FirstArticle from '../components/FirstArticle';
-import LeftArticle from '../components/LeftArticle';
-import RightArticle from '../components/RightArticle';
 import Background from '../images/Background.jpeg';
+import MiddleArticles from '../components/MiddleArticles';
+import LastArticles from '../components/LastArticles';
 
 const Wrapper = styled.div`
     position: relative;
@@ -55,13 +55,9 @@ const HeaderDiv = styled.div`
 const ArticlesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: left;
     padding-top: 25px;
     z-index: 5;
 
-    @media screen and (min-width: 1024px) {
-        padding-left: 20px;
-    }
     @media screen and (max-width: 1023px) {
         margin: 0px;
         display: flex;
@@ -70,6 +66,10 @@ const ArticlesContainer = styled.div`
 `;
 
 const Section = ({ header, articles }) => {
+    const initialArticle = articles[0];
+    const middleArticles = articles.length === 2 ? articles[1] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null);
+    const lastArticles = articles.length >= 3 ? articles.slice(articles.length - 2, articles.length) : null;
+
     return (
         <Wrapper>
             <Container>
@@ -79,22 +79,15 @@ const Section = ({ header, articles }) => {
                     <div style={{zIndex: 5}}>{header}</div>
                 </HeaderDiv>
                 <ArticlesContainer>
-                    {articles.map((article, index) => (
-                        <div>
-                            {index === 0 && 
-                                <a style={{textDecoration:'none'}} href={article.article_link}><FirstArticle article={article} /></a>
-                            }
-                            {index > 0 && index % 2 === 0 && articles.length >= 4 &&
-                                <a style={{textDecoration:'none'}} href={article.article_link}><LeftArticle article={article} /></a>
-                            }
-                            {index > 0 && index % 2 === 1 && articles.length >= 4 &&
-                                <a style={{textDecoration:'none'}} href={article.article_link}><RightArticle article={article}/></a>
-                            }
-                            {articles.length >= 3 && index === articles.length - 1 || index === articles.length - 2 &&
-                                <a style={{textDecoration:'none'}} href={article.article_link}><RightArticle article={article}/></a>
-                            }
-                        </div>
-                    ))}
+                    {initialArticle && 
+                        <a style={{textDecoration:'none'}} href={initialArticle.article_link}><FirstArticle article={initialArticle} /></a>
+                    }
+                    {middleArticles &&
+                        <MiddleArticles articles={middleArticles} />
+                    }
+                    {lastArticles &&
+                        <LastArticles articles={lastArticles} />
+                    }
                 </ArticlesContainer>
             </Container>
             <BackgroundContainer src={Background} />

@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import CrumpledPaper from '../images/CrumpledPaper.jpeg';
+import Card from '../images/Card.png';
+import Crown from '../images/Crown.png';
 
 const LeftArticleWrapper = styled.div`
-    max-width: 70vw;
-    margin: 15px;
+    width: 100vw;
+    height: 30rem;
     display: flex;
     z-index: 1;
-
+    justify-content: center;
+    position: relative;
     @media screen and (max-width: 1023px) {
         width: 100%;
         max-width: 90vw;
@@ -20,16 +24,38 @@ const Column = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    position: absolute;
+    left: 15%;
+    top: 5%;
     @media screen and (max-width: 1023px) {
         width: 100%;
     }
 `;
 
+const InfoCardBorder = styled.div`
+    padding: 1rem;
+    width: 30%;
+    height: 35%;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    left: 48%;
+    bottom: 5%;
+    @media screen and (max-width: 1023px) {
+        width: 100%;
+    }
+`;
+
+const InfoCard = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`;
 const MainImage = styled.div`
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 2;
-    position: relative;
+    width: 80%;
+    border: 0.5rem white solid;
 
     img {
         width: 100%;
@@ -45,63 +71,18 @@ const MainImage = styled.div`
     @media screen and (max-width: 768px) {
         max-width: 100%;
         max-height: 100%;
-
-        img {
-            margin: 0px 0px 0px 0px;
-        }
     }
 `;
 
-const TitleImage = styled.div`
-    display: flex;
-    z-index: 3;
-    max-width: 100%;
-    margin: 0rem 0rem 0rem -10%;
-    position: relative;
-    align-items: center;
-    justify-content: center;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-`;
-
-const ArticleImage = styled.div`
-    position: absolute;
-    max-height: 80%;
-    max-width: 70%;
-    overflow: hidden;
-    top: 10%;
-    left: 10%;
-    border-radius: 10px;
-`;
-
-const ArticleInfo = styled.div`
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    width: fit-content;
-    margin: 0rem 0rem 0rem 0rem;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: "Black Han Sans";
-    font-size: 28px;
+const ArticleTitle = styled.div`
+    color: #665B56;
+    font-family: "Fraunces", serif;
+    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 2px black;
-`;
-
-const ArticleTitle = styled(ArticleInfo)`
-    position: absolute;
-    font-size: 1.4rem;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0rem 2rem 1rem 2rem;
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
     }
@@ -128,18 +109,14 @@ const ArticleTitle = styled(ArticleInfo)`
     }
 `;
 
-const ArticleAuthor = styled(ArticleInfo)`
-    color: #FFFFFF;
+const ArticleAuthor = styled.div`
+    color: #262439;
     text-align: left;
-    margin-left: 10%;
-    padding-top: 5%;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Khula;
+    font-family: 'Enriqueta', serif;
     font-style: normal;
     font-size: 1.3rem;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0rem 2rem;
     @media screen and (max-width: 1200px) {
         font-size: 1.2rem;
     }
@@ -166,26 +143,27 @@ const ArticleAuthor = styled(ArticleInfo)`
     }
 `;
 
+
 const LeftArticle = ({ 
     article
-}) => {
+ }) => {
     return (
         <LeftArticleWrapper>     
             <Column>
                 <MainImage>
-                    <ArticleImage>
-                        <img src={article.image_url}/>
-                    </ArticleImage>
+                    <img src={article.image_url}/>
                 </MainImage>
             </Column>
-            <Column>
-                <TitleImage>
-                    <ArticleTitle>{article.article_title}</ArticleTitle>
-                </TitleImage>
-                <ArticleAuthor>
-                    BY: {article.article_authors}
-                </ArticleAuthor>
-            </Column>
+            <InfoCardBorder style={{ backgroundImage: `url(${CrumpledPaper})` }}>
+                <InfoCard style={{ backgroundImage: `url(${Card})` }}>
+                    <ArticleTitle>
+                        {article.article_title}
+                    </ArticleTitle>
+                    <ArticleAuthor>
+                        {article.article_authors}
+                    </ArticleAuthor>
+                </InfoCard>
+            </InfoCardBorder>
         </LeftArticleWrapper>
     );
 }
