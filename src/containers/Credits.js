@@ -21,6 +21,8 @@ const Container = styled.div`
 
 const HeaderDiv = styled.div`
     z-index: 10;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
     color: #665B56;
 `;
 
@@ -32,8 +34,8 @@ const Header = styled.h1`
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
     text-align: center;
 
-    @media only screen and (max-width: 768px) {
-        font-size: 1.88rem;
+    @media only screen and (max-width: 1023px){
+        font-size: 6vw;
     }
 `;
 
@@ -45,6 +47,7 @@ const SectAndNames = styled.div`
     padding: 4rem;
     @media only screen and (max-width: 768px){
         grid-template-columns: 1fr;
+        padding: 0rem;
     }
 `;
 
@@ -52,29 +55,16 @@ const Section = styled.div`
     z-index: 5;
     font-size: 1.5rem;
     font-weight: bold;
-    width: auto;
     height: fit-content;
-    margin-bottom: 2rem;
-    padding:0;
-    margin:0;
     font-family: 'Enriqueta', serif;
     @media only screen and (max-width: 1216px){
         font-size: 1.8rem;
         width: 18rem;
     }
-    @media only screen and (max-width: 1024px){
-        font-size: 1.7rem;
-        width: 16rem;
-    }
-    @media only screen and (max-width: 768px){
-        font-size: 1.6rem;
+    @media only screen and (max-width: 1023px){
+        font-size: 4vw;
         text-align: center;
-        width: 100%;
-    }
-    @media only screen and (max-width: 600px){
-        font-size: 1.4rem;
-        text-align: center;
-        width: 100%;
+        margin: auto;
     }
 `;
 
@@ -88,66 +78,15 @@ const Name = styled.div`
     @media only screen and (max-width: 1216px){
         font-size: 1rem;
     }
-    @media only screen and (max-width: 1024px){
-        font-size: 0.8rem;
+    @media only screen and (max-width: 1023px){
+        font-size: 3vw;
+        text-align: center;
     }
-    @media only screen and (max-width: 768px){
-        font-size:1rem;
-    }
-`;
-
-const Circle1 = styled.div`
-    position: absolute;
-    background: white;
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    top: 2%;
-    left: 5%;
-    z-index: 10;
-    box-shadow: 1px 1px 8px black;
-`;
-
-const Circle2 = styled.div`
-    position: absolute;
-    background: white;
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    top: 2%;
-    right: 5%;
-    box-shadow: 1px 1px 8px black;
-`;
-
-const Circle3 = styled.div`
-    position: absolute;
-    background: white;
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    bottom: 1%;
-    left: 5%;
-    box-shadow: 1px 1px 8px black;
-`;
-
-const Circle4 = styled.div`
-    position: absolute;
-    background: white;
-    border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
-    bottom: 1%;
-    right: 5%;
-    box-shadow: 1px 1px 8px black;
 `;
 
 const Credits = () => {
     return (
         <Container id="credits" style={{backgroundImage: `url(${Crumpled})`, backgroundSize: 'cover'}}>
-            <Circle1></Circle1>
-            <Circle2 />
-            <Circle3 />
-            <Circle4 />
             <HeaderDiv><Header>Staff who made this issue possible: </Header></HeaderDiv>
             <SectAndNames>
                 {Object.entries(credits).map(([section, key]) => {
