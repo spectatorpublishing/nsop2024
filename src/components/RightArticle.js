@@ -12,7 +12,16 @@ const RightArticleWrapper = styled.div`
     z-index: 1;
     justify-content: center;
     position: relative;
-    @media screen and (max-width: 1023px) {
+    @media (min-width: 2000px) {
+        height: 73rem;
+    }
+    @media (min-width: 701px) and (max-width: 1023px) {
+        height: 35rem;
+    }
+    @media (min-width: 511px) and (max-width: 700px) {
+        height: 25rem;
+    }
+    @media screen and (max-width: 510px) {
         height: 18rem;
     }
 `;
@@ -25,8 +34,16 @@ const Column = styled.div`
     position: absolute;
     left: 40%;
     top: 20%;
+    /* @media (min-width: 511px) and (max-width: 1023px) {
+        width: 60%;
+        top: 15%;
+        left: 30%;
+    } */
+    @media (min-width: 1700px) {
+        top: 15%;
+    }
     @media screen and (max-width: 1023px) {
-        width: 80%;
+        width: 60%;
         top: 15%;
         left: 30%;
     }
@@ -69,23 +86,23 @@ const MainImage = styled.div`
     }
 
     @media screen and (max-width: 1023px) {
-        width: 75%;
-        max-height: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-        max-width: 100%;
+        width: 100%;
         max-height: 100%;
     }
 `;
 
 const CrownImg = styled.img`
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     right: 14%;
     transform: rotate(20deg);
     width: 10rem;
     height: 10rem;
+
+    @media (min-width: 2000px) {
+        bottom: 20%;
+        right: 18%;
+    }
 
     @media screen and (max-width: 1023px) {
         display: none;

@@ -38,11 +38,11 @@ const BackgroundImage = styled.img`
 
 const CrownImg = styled.img`
     position: absolute;
-    top: 2%;
-    right: 20%;
+    top: -3%;
+    right: 15%;
     transform: rotate(20deg);
-    width: 13%;
-    height: 13%;
+    width: 10rem;
+    height: 10rem;
 
     @media only screen and (max-width: 1023px){
         top: -2%;
@@ -149,7 +149,14 @@ const Text = styled.div`
             margin-bottom: 5%;
             margin-top: 0;
             font-size: 3vw;
-            line-height: 1rem;
+            line-height: 2rem;
+        }
+
+        @media only screen and (max-width: 660px){
+            margin-bottom: 5%;
+            margin-top: 0;
+            font-size: 3vw;
+            line-height: 1.2rem;
         }
     }
 `;

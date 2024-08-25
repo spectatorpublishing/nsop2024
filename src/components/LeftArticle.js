@@ -11,9 +11,20 @@ const LeftArticleWrapper = styled.div`
     z-index: 1;
     justify-content: center;
     position: relative;
-    @media screen and (max-width: 1023px) {
+    @media (min-width: 1800px) {
+        height: 50rem;
+    }
+    @media (min-width: 701px) and (max-width: 1023px) {
         width: 100%;
-        height: 15rem;
+        height: 35rem;
+    }
+    @media (min-width: 511px) and (max-width: 700px) {
+        width: 100%;
+        height: 25rem;
+    }
+    @media screen and (max-width: 510px) {
+        width: 100%;
+        height: 18rem;
     }
 `;
 
@@ -27,6 +38,11 @@ const Column = styled.div`
     top: 5%;
     @media screen and (max-width: 1023px) {
         top: 11%;
+        width: 90%;
+        left: 5%;
+    }
+    @media (min-width: 511px) and (max-width: 700px) {
+        top: 15%;
         width: 90%;
         left: 5%;
     }
@@ -159,6 +175,9 @@ const CrownImg = styled.img`
 
     @media screen and (min-width: 1023px) {
         display: none;
+    }
+    @media (min-width: 701px) and (max-width: 1023px) {
+        top: -10%;
     }
 `;
 

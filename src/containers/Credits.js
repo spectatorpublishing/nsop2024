@@ -45,7 +45,7 @@ const SectAndNames = styled.div`
     width: auto;
     margin-top: 1rem;
     padding: 4rem;
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 1023px){
         grid-template-columns: 1fr;
         padding: 0rem;
     }

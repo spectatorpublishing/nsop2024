@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const HomeContainer = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -71,12 +71,13 @@ const Title = styled.div`
     line-height: 1;
     font-size: 6vw;
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-    text-align: center;
     z-index: 5;
+    margin: 1rem 3rem;
 
     @media only screen and (max-width: 1023px){
         font-size: 8vw;
         margin: 3rem 0rem;
+        text-align: center;
     }
 `;
 
