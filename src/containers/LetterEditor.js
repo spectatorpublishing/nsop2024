@@ -15,6 +15,12 @@ const LetterBackground = styled.div`
     width: 70%;
     margin: auto;
     z-index: 5;
+
+    @media only screen and (max-width: 1023px){
+        padding: 4rem 0rem;
+        width: 100vw;
+        margin: 0;
+    }
 `;
 
 const BackgroundImage = styled.img`
@@ -37,14 +43,25 @@ const CrownImg = styled.img`
     transform: rotate(20deg);
     width: 13%;
     height: 13%;
+
+    @media only screen and (max-width: 1023px){
+        top: -2%;
+        right: 8%;
+        width: 5rem;
+        height: 5rem;
+    }
 `;
 
 const LetterWrapper = styled.div`
     z-index: 5;
     padding: 5rem 8rem;
     background-size: cover;
+    position: relative;
     @media only screen and (max-width: 768px){
-        padding: 1rem;
+        padding: 1.2rem;
+        overflow-x: clip;
+        margin: auto;
+        width: 88%;
     }
 `;
 
@@ -52,11 +69,10 @@ const LetterEditor = () => {
     return (
         <Wrapper>
             <BackgroundImage src={Fabric} />
-            <CrownImg src={Crown} />
             <LetterBackground style={{backgroundImage: `url(${Crumpled})`}}>
                 <LetterWrapper style={{backgroundImage: `url(${Card})`}}>
+                    <CrownImg src={Crown} />
                     <Title>Letter From The Editor</Title>
-                    <MobileTitle>Letter From The Editor</MobileTitle>
                     <Text>
                         <p>Dear class of 2028,</p>
                         <p>Welcome to Columbia! As you immerse yourself in the University community and settle into your new home, you will encounter a campus facing a pivotal moment in its history as you, too, undergo significant change. You probably have lots of lingering questions about what the years ahead will look like and how to navigate all of Columbia’s different facets. Inside this special issue, you will find everything we at Spectator think first-year students should know as you acquaint yourself with campus life.</p>
@@ -94,43 +110,19 @@ const Title = styled.div`
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
     text-align: center;
 
-    @media only screen and (max-width: 768px) {
-        font-size: 1.88rem;
-    }
-  
-    @media only screen and (max-width: 570px) {
-        display: none;
-    }
-
-    @media only screen and (max-width: 400px) {
-        padding: 0;
-        font-size: 1.6rem;
-        display: inline-block;
-        display: none;
-    }
-`;
-
-const MobileTitle = styled.div`
-    color: #665B56;
-    font-family: 'Black Han Sans';
-    font-style: normal;
-    font-weight: 43.75rem;
-    font-size: 3.125rem;
-    line-height: 4rem;
-    text-transform: capitalize;
-
-    @media only screen and (max-width: 768px) {
-        font-size: 1.88rem;
-    }
-  
-    @media only screen and (min-width: 570px) {
-        display: none;
+    @media only screen and (max-width: 1023px){
+        margin-top: 13%;
+        font-size: 6vw;
     }
 `;
 
 const Text = styled.div`
     color: #665B56;
     font-family: 'Enriqueta', serif;
+    
+    @media only screen and (max-width: 1023px){
+        padding: 0rem 1rem;
+    }
 
     a{
         color: #665B56;
@@ -139,22 +131,26 @@ const Text = styled.div`
 
     h2{
         margin-bottom: -1.2rem;
+
+        @media only screen and (max-width: 1023px){
+            font-size: 3vw;
+            line-height: 1rem;
+            margin: 0;
+        }
     }
 
     p{
-    font-style: normal;
-    font-weight: 25rem;
-    font-size: 1.29rem;
-    line-height: 2rem;
-    
-    @media only screen and (max-width: 768px){
-        font-size: 1rem;
-    }
-    @media only screen and (max-width: 400px) {
-        padding: 0;
-        font-size: 0.9rem;
-        display: inline-block;
-    }
+        font-style: normal;
+        font-weight: 25rem;
+        font-size: 1.29rem;
+        line-height: 2rem;
+
+        @media only screen and (max-width: 1023px){
+            margin-bottom: 5%;
+            margin-top: 0;
+            font-size: 3vw;
+            line-height: 1rem;
+        }
     }
 `;
 
@@ -168,8 +164,7 @@ const Signatures = styled.div`
     margin-top: 8rem;
     
     @media only screen and (max-width: 768px){
-        font-size: 1.88rem;
-        text-align: left;
+        margin-top: 5rem;
     }    
 `;
 
@@ -187,10 +182,10 @@ const Signature = styled.div`
         text-transform: capitalize;
         text-align: left;
         
-        @media only screen and (max-width: 768px) {
-            font-size: 2rem;
-            line-height: 3px;
-            padding-top: 15px;
+
+        @media only screen and (max-width: 1023px){
+            font-size: 3vw;
+            line-height: 1rem;
         }
        
     }
@@ -202,9 +197,9 @@ const Signature = styled.div`
         font-size: 1.125rem;
         line-height: 1.813rem;
 
-        @media only screen and (max-width: 768px){
-            font-size: 1rem;
-            display: inline-block;
+        @media only screen and (max-width: 1023px){
+            font-size: 3vw;
+            line-height: 1rem;
         }
     }
 `;

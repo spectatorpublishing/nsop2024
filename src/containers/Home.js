@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
 import Background from '../images/Background.jpeg';
+import Crown from '../images/Crown.png';
 
 const Container = styled.div`
     position: relative;
@@ -38,6 +39,12 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 9.375vw;
+    
+    @media only screen and (max-width: 1023px){
+        position: relative;
+        width: 100vw;
+        overflow-x: clip;
+    }
 `;
 
 const Photo = styled.div`
@@ -47,6 +54,14 @@ const Photo = styled.div`
     border: 0.4rem white solid;
     margin-left: 4rem;
     z-index: 5;
+
+    @media only screen and (max-width: 1023px){
+        width: 100vw;
+        margin-left: 0rem;
+        border: none;
+        border-top: 0.2rem white solid;
+        border-bottom: 0.2rem white solid;
+    }
 `;
 
 const Title = styled.div`
@@ -56,10 +71,28 @@ const Title = styled.div`
     line-height: 1;
     font-size: 6vw;
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-    margin: 0rem 4rem 2rem 3rem;
+    text-align: center;
     z-index: 5;
+
+    @media only screen and (max-width: 1023px){
+        font-size: 8vw;
+        margin: 3rem 0rem;
+    }
 `;
 
+const CrownImg = styled.img`
+    position: absolute;
+    z-index: 6;
+    width: 7rem;
+    height: 6rem;
+    transform: rotate(20deg);
+    top: -10%;
+    right: -5%;
+
+    @media only screen and (min-width: 1023px){
+        display: none;
+    }
+`;
 
 const Home = () => {
     return (
@@ -69,6 +102,7 @@ const Home = () => {
                 <NavBar/>
                 <Title>Welcome to Columbia!</Title>
                 <Wrapper>
+                    <CrownImg src={Crown} />
                     <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BBMUUMI72FCNJPRQCHM4JOTPQ4.tiff" alt = "NSOP graphic" width = "100%"></img></Photo>
                 </Wrapper>
                 <Letter/>
