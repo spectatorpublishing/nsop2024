@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
+import SpecLogoHeader from '../components/SpecLogoHeader';
 import { NavHashLink } from 'react-router-hash-link';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdClose } from 'react-icons/md';
-import { IconContext } from 'react-icons/lib';
 import {sections} from '../data/sections';
+import Hamburger from 'hamburger-react'
 
 
 const NavWrap = styled.div`
     color: white;
-    position: absolute;
-    top: 3rem;
-    right: 0rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
     a {
         text-decoration: none;
     }
@@ -19,16 +20,16 @@ const NavWrap = styled.div`
     @media only screen and (min-width: 1023px){
         display: none;
     }
-
-    @media only screen and (max-width: 1023px){
-        display: flex;
-        flex-direction: row;
-    }
 `;
 
 const MobileNav = styled.div`
-    display: none;
+    display: flex;
     padding: 0rem 1rem;
+    background-color: #7C5E3D;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+
     @media only screen and (max-width: 1023px){
         display: flex;
         flex-direction: row;
@@ -37,52 +38,36 @@ const MobileNav = styled.div`
 
 const MobileMenu = styled.div`
     display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    margin: 2rem 1rem;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    background-color: #4F3850;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #F8BEB9;
-
-    @media only screen and (max-width: 1023px){
-        display: flex;
-        flex-direction: column;
-    }
-`;
-
-const MobileWrapper = styled.div`
-    display: flex;
     flex-direction: column;
-    margin: 30px 0 30px 0;
+    z-index: 10;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    background-color: #8B6A45;
+    color: #FFFFFF;
+    width: 100vw;
 `;
 
 const MenuIcon = styled.div`
-    margin-left: auto;
-    margin-right:0.5rem;
-    display: flex;
-    color: ${props => props.color};
+    color: white;
+    margin-right: 2rem;
     .menu {
         font-size:2.25rem;
     }
 `;
 
+const LinkWrapper = styled.div`
+    margin: auto;
+    width: 90vw;
+    background-color: ${props => props.currentSection ? '#D9D9D9' : '#8B6A45'};
+`;
+
 const Link = styled.a`
-    display: flex;
+    text-align: center;
     font-size:1rem;
-    padding: 0.85rem 1.25rem;
-    width: fit-content;
-    margin-left: auto;
-    border-radius: 20px;
-    color: ${props => props.currentSection ? '#F4D1D8' : '#F9B71A'};
-    font-weight: ${props => props.currentSection ? 900 : 400};
-    background-color: ${props => props.currentSection ? 'rgba(244, 209, 216, 0.2)' : '#4F3850'};
+    width: 80%;
+    color: ${props => props.currentSection ? '#8B6A45' : '#FFFFFF'};
     &:hover{
-         color: #F4D1D8;
+         text-decoration: underline;
          cursor:pointer;
     }
 `;
@@ -93,42 +78,31 @@ const NavText = styled.div`
     text-transform: uppercase;
 `;
 
-const Bullet = styled.span`
-    width: 5px;
-    height: 5px;
-    background-color: ${(props) => (props.currentSection ? '#F4D1D8' : '#F9B71A')};
-    border-radius: 50%;
-    margin: auto 0rem;
-`;
-
 const MobileNavBar = () => {
-    const [show, setToggle] = useState(false);
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <NavWrap>
             <MobileNav>
+                <SpecLogoHeader />
                 <MenuIcon>
-                    <IconContext.Provider value={{ className: 'menu' }} >
-                        {show ? <MdClose onClick={() => setToggle(!show)} /> : <GiHamburgerMenu onClick={() => setToggle(!show)} />}
-                    </IconContext.Provider>
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
                 </MenuIcon>
             </MobileNav>
             <MobileMenu>
-                <MobileWrapper>
-                    {sections.map((section, index) => {
-                        return (
-                            <>
-                                {(show) ?
-                                    <NavHashLink smooth to={section.url} style={{marginTop: '6`px'}}>
-                                        <Link currentSection = {window.location.pathname === section.url} key={index} onClick={() => setToggle(!show)}>
-                                            <NavText>{section.title}</NavText>
-                                            <Bullet currentSection={window.location.pathname === section.url} />
-                                        </Link>
-                                    </NavHashLink> : null}
-                            </>
-                        )
-                    })}
-                </MobileWrapper>
+                {sections.map((section, index) => {
+                    return (
+                        (isOpen) ?
+                        <LinkWrapper currentSection = {window.location.pathname === section.url}>
+                            <NavHashLink smooth to={section.url} style={{margin: '1rem'}}>
+                                <Link currentSection = {window.location.pathname === section.url} key={index} onClick={() => setOpen(!isOpen)}>
+                                    <NavText>{section.title}</NavText>
+                                </Link>
+                            </NavHashLink> 
+                        </LinkWrapper>
+                        : null
+                    )
+                })}
             </MobileMenu>
         </NavWrap>
     );

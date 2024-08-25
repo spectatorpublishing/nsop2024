@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SpecLogo = styled.div`
     display: flex;
     justify-content: right;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 `;
 
 const Image = styled.img`

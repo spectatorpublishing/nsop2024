@@ -50,19 +50,25 @@ const NavText = styled.div`
     text-transform: uppercase;
 `;
 
+const Container = styled.div`
+    margin-top: 2rem;
+`;
+
 
 const NavBar = () => {
     return(
         <NavWrapper>
             <VertNav>
             <SpecLogoHeader />
-            {sections.map((section, index) => (
-                <NavHashLink smooth to={section.url}>
-                    <Tab currentSection = {window.location.pathname === section.url} key={index} style={{backgroundImage: `${window.location.pathname === section.url ? `url(${Crumpled})` : ''}`, backgroundSize: 'cover'}}>
-                        <NavText>{section.title}</NavText>
-                    </Tab>
-                </NavHashLink>
-            ))}
+            <Container>
+                {sections.map((section, index) => (
+                    <NavHashLink smooth to={section.url}>
+                        <Tab currentSection = {window.location.pathname === section.url} key={index} style={{backgroundImage: `${window.location.pathname === section.url ? `url(${Crumpled})` : ''}`, backgroundSize: 'cover'}}>
+                            <NavText>{section.title}</NavText>
+                        </Tab>
+                    </NavHashLink>
+                ))}
+            </Container>
             </VertNav>
         </NavWrapper>
     );
