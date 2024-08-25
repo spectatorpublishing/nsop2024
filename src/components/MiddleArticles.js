@@ -12,7 +12,6 @@ const Wrapper = styled.div`
         width: 100%;
         max-width: 90vw;
         justify-content: center;
-        margin: 10px;
     }
 `;
 

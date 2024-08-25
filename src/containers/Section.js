@@ -40,15 +40,12 @@ const HeaderDiv = styled.div`
     font-weight: 900;
     font-size: 6vw;
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-    margin: 0rem 3rem;
+    margin: 2rem 0rem 0rem 1rem;
     z-index: 5;
 
     @media screen and (max-width: 1023px) {
         width: fit-content;
-        margin: 0rem auto;
         font-size: 2.5rem;
-        padding: 1rem 1rem;
-        text-align: center;
     }
 `;
 
@@ -57,18 +54,12 @@ const ArticlesContainer = styled.div`
     flex-direction: column;
     padding-top: 25px;
     z-index: 5;
-
-    @media screen and (max-width: 1023px) {
-        margin: 0px;
-        display: flex;
-        align-items: center;
-    }
 `;
 
 const Section = ({ header, articles }) => {
     const initialArticle = articles[0];
-    const middleArticles = articles.length === 2 ? articles[1] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null);
-    const lastArticles = articles.length >= 3 ? articles.slice(articles.length - 2, articles.length) : null;
+    const middleArticles = window.innerWidth <= 1023 ? articles.slice(1, articles.length) : (articles.length === 2 ? articles[1] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null));
+    const lastArticles = window.innerWidth <= 1023 ? null : (articles.length >= 3 ? articles.slice(articles.length - 2, articles.length) : null);
 
     return (
         <Wrapper>

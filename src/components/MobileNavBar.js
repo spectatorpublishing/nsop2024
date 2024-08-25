@@ -57,6 +57,7 @@ const MenuIcon = styled.div`
 
 const LinkWrapper = styled.div`
     margin: auto;
+    margin-bottom: 0.5rem;
     width: 90vw;
     background-color: ${props => props.currentSection ? '#D9D9D9' : '#8B6A45'};
 `;

@@ -13,9 +13,7 @@ const LeftArticleWrapper = styled.div`
     position: relative;
     @media screen and (max-width: 1023px) {
         width: 100%;
-        max-width: 90vw;
-        justify-content: center;
-        margin: 10px;
+        height: 15rem;
     }
 `;
 
@@ -28,7 +26,9 @@ const Column = styled.div`
     left: 15%;
     top: 5%;
     @media screen and (max-width: 1023px) {
-        width: 100%;
+        top: 11%;
+        width: 90%;
+        left: 5%;
     }
 `;
 
@@ -42,7 +42,11 @@ const InfoCardBorder = styled.div`
     left: 48%;
     bottom: 5%;
     @media screen and (max-width: 1023px) {
-        width: 100%;
+        padding: 0.5rem;
+        width: 45%;
+        height: 25%;
+        bottom: 15%;
+        left: 52%;
     }
 `;
 
@@ -56,12 +60,6 @@ const InfoCard = styled.div`
 const MainImage = styled.div`
     width: 80%;
     border: 0.5rem white solid;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 
     @media screen and (max-width: 1023px) {
         max-width: 100%;
@@ -86,7 +84,7 @@ const ArticleTitle = styled.div`
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
     }
-    @media screen and (max-width: 1023px) {
+    /* @media screen and (max-width: 1023px) {
         font-size: 1.1rem;
     }
     @media screen and (max-width: 768px) {
@@ -106,6 +104,10 @@ const ArticleTitle = styled.div`
     }
     @media screen and (max-width: 400px) {
         font-size: 0.4rem;
+    } */
+    @media screen and (max-width: 1023px) {
+        font-size: 2vw;
+        margin: 0rem 0.5rem;
     }
 `;
 
@@ -120,7 +122,7 @@ const ArticleAuthor = styled.div`
     @media screen and (max-width: 1200px) {
         font-size: 1.2rem;
     }
-    @media screen and (max-width: 1023px) {
+    /* @media screen and (max-width: 1023px) {
         font-size: 1.1rem;
     }
     @media screen and (max-width: 768px) {
@@ -140,6 +142,23 @@ const ArticleAuthor = styled.div`
     }
     @media screen and (max-width: 400px) {
         font-size: 0.5rem;
+    } */
+    @media screen and (max-width: 1023px) {
+        font-size: 1.5vw;
+        margin: 0rem 0.5rem;
+    }
+`;
+
+const CrownImg = styled.img`
+    position: absolute;
+    top: -15%;
+    left: 0%;
+    transform: rotate(-20deg);
+    width: 5rem;
+    height: 5rem;
+
+    @media screen and (min-width: 1023px) {
+        display: none;
     }
 `;
 
@@ -151,7 +170,8 @@ const LeftArticle = ({
         <LeftArticleWrapper>     
             <Column>
                 <MainImage>
-                    <img src={article.image_url}/>
+                    <CrownImg src={Crown} />
+                    <img style={{width: '100%', height: '100%', objectFit: 'cover'}}src={article.image_url}/>
                 </MainImage>
             </Column>
             <InfoCardBorder style={{ backgroundImage: `url(${CrumpledPaper})` }}>

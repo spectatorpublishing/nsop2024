@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
     @media screen and (max-width: 1023px) {
         width: 100%;
+        height: 40vh;
         max-width: 90vw;
         justify-content: center;
         margin: 10px;
@@ -31,29 +32,27 @@ const MainImage = styled.div`
 
     @media screen and (max-width: 1023px) {
         max-width: 100%;
-        max-height: 100%;
+        max-height: 40%;
     }
 
     @media screen and (max-width: 768px) {
-        max-width: 100%;
-        max-height: 100%;
-
-        img {
-            margin: 0px 0px 0px 0px;
-        }
+        width: 95%;
+        max-height: 80%;
     }
 `;
 
 const InfoCardBorder = styled.div`
     position: absolute;
-    bottom: 1%;
+    bottom: 0%;
     right: 0%;
     padding: 1rem;
     width: 35%;
     height: 23%;
     background-size: cover;
     @media screen and (max-width: 1023px) {
-        width: 100%;
+        width: 50%;
+        right: 5%;
+        padding: 0.5rem;
     }
 `;
 
@@ -80,9 +79,10 @@ const ArticleTitle = styled.div`
         font-size: 1.1rem;
     }
     @media screen and (max-width: 1023px) {
-        font-size: 1.1rem;
+        font-size: 2vw;
+        margin: 0rem 0.5rem;
     }
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         font-size: 0.9rem;
     }
     @media screen and (max-width: 600px) {
@@ -99,7 +99,7 @@ const ArticleTitle = styled.div`
     }
     @media screen and (max-width: 400px) {
         font-size: 0.4rem;
-    }
+    } */
 `;
 
 const ArticleAuthor = styled.div`
@@ -114,9 +114,10 @@ const ArticleAuthor = styled.div`
         font-size: 1.2rem;
     }
     @media screen and (max-width: 1023px) {
-        font-size: 1.1rem;
+        font-size: 1.5vw;
+        margin: 0rem 0.5rem;
     }
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         font-size: 1.0rem;
     }
     @media screen and (max-width: 600px) {
@@ -133,7 +134,7 @@ const ArticleAuthor = styled.div`
     }
     @media screen and (max-width: 400px) {
         font-size: 0.5rem;
-    }
+    } */
 `;
 
 const FirstArticle = ({ 

@@ -13,10 +13,7 @@ const RightArticleWrapper = styled.div`
     justify-content: center;
     position: relative;
     @media screen and (max-width: 1023px) {
-        width: 100%;
-        max-width: 90vw;
-        justify-content: center;
-        margin: 10px;
+        height: 18rem;
     }
 `;
 
@@ -29,7 +26,9 @@ const Column = styled.div`
     left: 40%;
     top: 20%;
     @media screen and (max-width: 1023px) {
-        width: 100%;
+        width: 80%;
+        top: 15%;
+        left: 30%;
     }
 `;
 
@@ -43,7 +42,11 @@ const InfoCardBorder = styled.div`
     left: 15%;
     bottom: 20%;
     @media screen and (max-width: 1023px) {
-        width: 100%;
+        padding: 0.5rem;
+        width: 45%;
+        left: 10%;
+        height: 22%;
+        bottom: 10%;
     }
 `;
 
@@ -54,6 +57,7 @@ const InfoCard = styled.div`
     flex-direction: column;
     justify-content: center;
 `;
+
 const MainImage = styled.div`
     width: 80%;
     border: 0.5rem white solid;
@@ -65,7 +69,7 @@ const MainImage = styled.div`
     }
 
     @media screen and (max-width: 1023px) {
-        max-width: 100%;
+        width: 75%;
         max-height: 100%;
     }
 
@@ -82,6 +86,10 @@ const CrownImg = styled.img`
     transform: rotate(20deg);
     width: 10rem;
     height: 10rem;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
 `;
 
 
@@ -96,7 +104,7 @@ const ArticleTitle = styled.div`
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
     }
-    @media screen and (max-width: 1023px) {
+    /* @media screen and (max-width: 1023px) {
         font-size: 1.1rem;
     }
     @media screen and (max-width: 768px) {
@@ -116,6 +124,10 @@ const ArticleTitle = styled.div`
     }
     @media screen and (max-width: 400px) {
         font-size: 0.4rem;
+    } */
+    @media screen and (max-width: 1023px) {
+        font-size: 2vw;
+        margin: 0rem 0.5rem;
     }
 `;
 
@@ -130,7 +142,7 @@ const ArticleAuthor = styled.div`
     @media screen and (max-width: 1200px) {
         font-size: 1.2rem;
     }
-    @media screen and (max-width: 1023px) {
+    /* @media screen and (max-width: 1023px) {
         font-size: 1.1rem;
     }
     @media screen and (max-width: 768px) {
@@ -150,6 +162,11 @@ const ArticleAuthor = styled.div`
     }
     @media screen and (max-width: 400px) {
         font-size: 0.5rem;
+    } */
+
+    @media screen and (max-width: 1023px) {
+        font-size: 1.5vw;
+        margin: 0rem 0.5rem;
     }
 `;
 
