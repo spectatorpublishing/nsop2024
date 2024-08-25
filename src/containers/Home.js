@@ -101,7 +101,7 @@ const Home = () => {
                 <Title>Welcome to Columbia!</Title>
                 <Wrapper>
                     <CrownImg src={Crown} />
-                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BBMUUMI72FCNJPRQCHM4JOTPQ4.tiff" alt = "NSOP graphic" width = "100%"></img></Photo>
+                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZSWJ6SBZJJAJRIGRCJUZIA4FTA.jpg" alt = "NSOP graphic" width = "100%"></img></Photo>
                 </Wrapper>
                 <Letter/>
                 <Credits/>
