@@ -58,7 +58,7 @@ const ArticlesContainer = styled.div`
 
 const Section = ({ header, articles }) => {
     const initialArticle = articles[0];
-    const middleArticles = window.innerWidth <= 1023 ? articles.slice(1, articles.length) : (articles.length === 2 ? articles[1] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null));
+    const middleArticles = window.innerWidth <= 1023 ? [articles.slice(1, articles.length)] : (articles.length === 2 ? [articles[1]] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null));
     const lastArticles = window.innerWidth <= 1023 ? null : (articles.length >= 3 ? articles.slice(articles.length - 2, articles.length) : null);
 
     return (

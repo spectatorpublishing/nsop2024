@@ -31,5 +31,9 @@ export const sections = [
     {
         title: "Spectrum",
         url: "/spectrum",
-    }
+    },
+    {
+        title: "Video",
+        url: "/video",
+    },
 ];

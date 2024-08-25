@@ -69,11 +69,10 @@ const ArticleTitle = styled.div`
     flex-direction: column;
     color: #665B56;
     font-family: "Fraunces", serif;
-    font-size: 6vw;
+    font-size: 1.2rem;
     text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
     font-style: normal;
     font-weight: 900;
-    font-size: 1.5rem;
     margin: 0rem 2rem 1rem 2rem;
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
@@ -82,24 +81,6 @@ const ArticleTitle = styled.div`
         font-size: 2vw;
         margin: 0rem 0.5rem;
     }
-    /* @media screen and (max-width: 768px) {
-        font-size: 0.9rem;
-    }
-    @media screen and (max-width: 600px) {
-        font-size: 0.8rem;
-    }
-    @media screen and (max-width: 550px) {
-        font-size: 0.7rem;
-    }
-    @media screen and (max-width: 500px) {
-        font-size: 0.6rem;
-    }
-    @media screen and (max-width: 450px) {
-        font-size: 0.5rem;
-    }
-    @media screen and (max-width: 400px) {
-        font-size: 0.4rem;
-    } */
 `;
 
 const ArticleAuthor = styled.div`

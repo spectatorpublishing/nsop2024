@@ -1,42 +1,19 @@
 // Mock data to define articles to be passed into each section page
 export const ac_articles = [
   {
-    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/02/12/soharlems-designers-reflect-on-the-creative-process-garment-making-and-working-in-harlem/",
-    "article_title": "SoHarlem’s designers reflect on the creative process, garment-making, and working in Harlem",
-    "article_authors": "Kristin Merrilees",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3FEIAVTO6NES3LR5UWAFAKNUYA.jpg"
+    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/08/20/five-spaces-near-columbia-to-experience-art-at-this-fall/",
+    "article_title": "Five spaces near Columbia to experience art at this fall",
+    "article_authors": "Liam Downey",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/66B4FMWZFVH6BEZYWMKSWQBHQA.jpg"
   }, 
   {
-    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/02/05/photographs-of-langston-hughes-by-griffith-j-davis-the-schomburg-center-celebrates-black-artistry-and-friendship/",
-    "article_title": "Photographs of Langston Hughes by Griffith J. Davis: The Schomburg Center celebrates Black artistry and friendship",
-    "article_authors": "Stuart Beal",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AVK3MM6NEBHIDIUC7OSQWYR2EI.jpg"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/02/12/harlem-chamber-players-is-retelling-black-history-of-classical-music-for-west-harlem/",
-    "article_title": "Harlem Chamber Players is retelling Black history of classical music for West Harlem",
-    "article_authors": "LAYLA HUSSEIN",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FINA5NQ7BZHB5PR3IZ3JJAWHIE.jpeg"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/02/13/conceiving-culture-grandmaster-flash-on-quick-mix-theory-50-years-of-hip-hop-and-making-something-out-of-nothing/",
-    "article_title": "Conceiving culture: Grandmaster Flash on quick mix theory, 50 years of hip-hop, and making something out of nothing",
-    "article_authors": "Rachel Shaw",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7WVTESNF5NBI7E6SFLLCXJH6XM.jpg"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/02/12/sandi-ahavah-nelson-jamal-peoples-and-gregory-lawrence-reflect-on-50-years-of-hip-hop/",
-    "article_title": "Sandi ‘Ahavah’ Nelson, Jamal Peoples, and Gregory Lawrence reflect on 50 years of hip-hop",
+    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/08/21/breaking-down-19-of-columbias-student-dance-groups/",
+    "article_title": "Breaking down 19 of Columbia’s student dance groups",
     "article_authors": "Joyce Zhang",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MMTBO3T7CZBQPEWDQ4RYEI5XAE.png"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/arts-and-culture/2024/02/09/student-and-professional-actress-ariana-neal-reflects-on-beyonce-her-career-and-the-future-of-the-black-theatre-ensemble/",
-    "article_title": "Student and professional actress Ariana Neal reflects on Beyonce, her career, and the future of the Black Theatre Ensemble",
-    "article_authors": "AVA MARKHOVSKY",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TE7T6KNUMBAFNF2XC7B45CNONY.jpg"
-  },
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ICAOC2FIYBBTLGNLM34BOFD3BQ.png"
+  }
 ];
+
 export const city_news_articles = 
 [
   {
@@ -74,14 +51,47 @@ export const opinion_articles = [
 ];
   export const audio_articles = [
     {
-      "article_link": "https://www.columbiaspectator.com/podcasts/2024/02/13/riverside-church-and-the-road-to-racial-justice/",
-      "article_title": "Riverside Church and the road to racial justice",
-      "article_authors": "Sophia Cordoba",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7UVQTK7PBBHYPFJE5ULHFXWREQ.png"
+      "article_link": "https://www.columbiaspectator.com/main/2024/06/26/six-hours-at-jjs-place/",
+      "article_title": "Six Hour's at JJ's Place",
+      "article_authors": "Luisa Sukkar",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HHDTZKFGXVD4JCTC4SCLAULHXE.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/podcasts/2024/08/20/columbia-crash-course-transfer-edition/",
+      "article_title": "Columbia Crash Course: Transfer edition",
+      "article_authors": "Nicole Sandrik-Arzadi",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/74W7VGFTVNFGHFU6AHD7S7QJJ4.jpg"
     },
   ];
 
+  export const video_articles = [
+    {
+      "article_link": "https://www.columbiaspectator.com/videos/2024/08/22/toms-restaurant-a-beloved-diner-with-a-twist-of-tv-history/",
+      "article_title": "Tom’s Restaurant: A beloved diner with a twist of TV history",
+      "article_authors": "Emily Huang, Elliot Heath, and Valentina Zarins Martinez",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/T2VGQK5OOVAEVJYAKUUXPO6W5U.jpg"
+    }
+  ];
+
   export const university_news_articles = [
+    {
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/22/whos-who-here-are-the-key-columbia-and-barnard-administrators-to-know-in-2024/",
+      "article_title": "Who’s who? Here are the key Columbia and Barnard administrators to know in 2024",
+      "article_authors": "Saul Quintanar",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/QLRA36SUHNFDDON5B3KZW5MWKM.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/news/2024/02/13/obama-presidency-oral-history-project-documents-presidency-through-voices-of-administration-activists-and-everyday-people/",
+      "article_title": "Obama Presidency Oral History Project documents presidency through voices of administration, activists, and everyday people",
+      "article_authors": "Sabrina Ticer-Wurr",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FRMPYE2AMJCGHGO3FAEOLIQIHA.png"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/news/2024/02/14/meeting-the-political-moment-bso-and-boss-at-columbia-and-barnard-over-the-past-five-decades/",
+      "article_title": "‘Meeting the political moment’: BSO and BOSS at Columbia and Barnard over the past five decades",
+      "article_authors": "Maya Stahl",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFYO5LPZBJEB7GGV7VKCXZBS2A.png"
+    },
     {
       "article_link": "https://www.columbiaspectator.com/news/2024/02/08/an-embedded-community-black-pre-law-society-brings-together-black-undergraduates/",
       "article_title": "‘An embedded community’: Black Pre-Law Society brings together Black undergraduates",
@@ -100,59 +110,95 @@ export const opinion_articles = [
       "article_authors": "Maya Stahl",
       "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFYO5LPZBJEB7GGV7VKCXZBS2A.png"
     },
+    {
+      "article_link": "https://www.columbiaspectator.com/news/2024/02/14/meeting-the-political-moment-bso-and-boss-at-columbia-and-barnard-over-the-past-five-decades/",
+      "article_title": "‘Meeting the political moment’: BSO and BOSS at Columbia and Barnard over the past five decades",
+      "article_authors": "Maya Stahl",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFYO5LPZBJEB7GGV7VKCXZBS2A.png"
+    },
   ];
 
 
   export const sports_articles = [
     {
-      "article_link": "https://www.columbiaspectator.com/sports/2024/02/13/tobe-carberry-a-coach-and-role-model-for-columbia-mens-basketball/",
-      "article_title": "Tobe Carberry: A coach and role model for Columbia men’s basketball",
-      "article_authors": "Takashi Williams, Arielle Rieder",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YKMEGMZXJZFVXNPIJT73ABEX4U.jpg"
+      "article_link": "https://www.columbiaspectator.com/sports/2024/08/18/womens-soccer-looks-for-historic-repeat-this-season/",
+      "article_title": "Women’s soccer looks for historic repeat this season",
+      "article_authors": "Arielle Rieder",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RR6P27DSQBFALB3SUJOU4OZVOA.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/sports/2024/02/14/pitching-against-the-odds-exploring-the-declining-number-of-black-pitchers-through-the-lens-of-columbias-baseball-players/",
-      "article_title": "Pitching against the odds: Exploring the declining number of Black pitchers through the lens of Columbia’s baseball players",
+      "article_link": "https://www.columbiaspectator.com/sports/2024/06/28/into-the-lions-den-a-look-at-the-incoming-mens-tennis-class/",
+      "article_title": "Into the Lions’ den: A look at the incoming men’s tennis class",
+      "article_authors": "Takashi Williams, Ayaan Ali",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BMNZ4MUHVJB27FRQK3L22D5XIM.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/sports/2024/08/20/mens-soccer-in-search-of-winning-solution-this-season/",
+      "article_title": "Men’s soccer in search of winning solution this season",
+      "article_authors": "Jillian Prunty, Takashi Williams",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7MNPPOAOTJDOXDWZPQAHCHQRII.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/sports/2024/08/21/heres-how-the-lions-did-at-the-paris-olympics/",
+      "article_title": "Here’s how the Lions did at the Paris Olympics",
+      "article_authors": "Arielle Rieder, Ashley Flores",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/Q2JCW256OFBEPF4WU6OEAZLZI4.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/sports/2024/08/20/from-casablanca-to-wimbledon-how-malak-el-allamis-historic-junior-career-led-her-to-columbia/",
+      "article_title": "From Casablanca to Wimbledon: How Malak El Allami’s historic junior career led her to Columbia",
       "article_authors": "Takashi Williams",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WYBTVWG5JZG2HNIW76S4WL4ACI.jpeg"
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/W6YEND35DRG2BCNWVOYM3FWF3E.jpeg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/sports/2024/02/12/lift-as-they-rise-cara-holdsclaw-on-elevating-women-in-sports/",
-      "article_title": "‘Lift as they rise’: Cara Holdsclaw on elevating women in sports",
-      "article_authors": "Sydney Stoller",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VBWPIOK2OBFWRALYCXVPMHUC74.JPG"
+      "article_link": "https://www.columbiaspectator.com/sports/2024/08/21/heres-what-you-need-to-know-about-columbia-football-this-season/",
+      "article_title": "Here’s what you need to know about Columbia football this season",
+      "article_authors": "Lucas Metzger, Aidan Hassan, Emma Dignan",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TT6TIS3IBVC7TMCI6KT53LA2WI.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/sports/2024/02/16/remembering-jim-mcmillian-cc-70-nba-champion-columbia-legend-and-father/",
-      "article_title": "Remembering Jim McMillian, CC ’70: NBA champion, Columbia legend, and father",
-      "article_authors": "Heather Chen",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZAAKSEUBNBG2PENQF4BBV3TBGA.jpeg"
+      "article_link": "https://www.columbiaspectator.com/sports/2024/08/22/yes-columbia-sports-do-exist-a-first-years-guide-to-columbia-athletics/",
+      "article_title": "Yes, Columbia sports do exist: A first-year’s guide to Columbia Athletics",
+      "article_authors": "Jillian Prunty, Arielle Rieder, Heather Chen, Takashi Williams",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AS6AJQC63VF2PB7DUYE3EMTRPY.jpg"
     },
   ];
 
   export const spectrum_articles = [
     {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2024/02/04/black-history-month-class-list-must-take-classes-you-shouldnt-miss/",
-      "article_title": "Black History Month class list: Must-take classes you shouldn’t miss",
-      "article_authors": "Jasmine Li",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MOGBEENULNGHRFTNFTFGNVGSAM.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2024/02/04/highlighting-black-columbia-alumni-and-their-experiences/",
-      "article_title": "Highlighting Black Columbia alumni and their experiences",
-      "article_authors": "Terrah Garner",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3CVPTRASFJCZ7AYM3PSLJQ4BK4.png"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2024/02/01/black-history-month-events-to-check-out-this-february/",
-      "article_title": "Black History Month events to check out this February",
-      "article_authors": "Manuela Moreyra",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OWILOXTMENCK7BQ7JIRUAKJGVA.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/spectrum/2024/02/04/black-history-month-playlist-and-book-recommendations/",
-      "article_title": "Black History Month playlist and book recommendations",
+      "article_link": "https://www.columbiaspectator.com/spectrum/2024/08/22/fall-2024-a-breakdown-and-academic-timeline-15/",
+      "article_title": "Fall 2024: A breakdown and academic timeline",
       "article_authors": "Anuthmi Waas",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5BSKSYZH5VENFL4VEHGSN7H5BI.JPG"
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BSTJU77OSVCGFE3UJCUME5HCP4.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/spectrum/2024/08/18/brat-but-its-during-the-school-year/",
+      "article_title": "brat, but it’s during the school year",
+      "article_authors": "Sophia Berrocal",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/N6FKN4IXDVHSLJH2PUUEKX6RJY.png"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/spectrum/2024/08/21/the-ultimate-guide-to-columbias-dining-halls/",
+      "article_title": "The ultimate guide to Columbia’s dining halls",
+      "article_authors": "Jasveenkaur Wahan",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2D567XYOL5AKJMS53U2KQYLQ7Q.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/spectrum/2024/08/22/adjusting-to-college-life-while-swimming-through-columbias-waters/",
+      "article_title": "Adjusting to college life while swimming through Columbia’s waters",
+      "article_authors": "Loyca Jean",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/CDFLLM7SL5FSPJMTPQRDRWF2O4.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/spectrum/2024/08/19/your-guide-to-navigating-morningside-heights/",
+      "article_title": "Your guide to navigating Morningside Heights",
+      "article_authors": "Jasmine Li",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VQOVQ5GFQND67E7UJHKZRU3SWE.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/spectrum/2021/08/28/116-columbia-traditions/",
+      "article_title": "116 Columbia traditions",
+      "article_authors": "Columbia Daily Spectator",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RTZCJYYI7VB6BIBKSG27C5JH4Q.png"
     },
 ];

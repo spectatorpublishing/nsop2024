@@ -93,16 +93,16 @@ const MainImage = styled.div`
 
 const CrownImg = styled.img`
     position: absolute;
-    bottom: 10%;
-    right: 14%;
+    bottom: 20%;
+    right: 16%;
     transform: rotate(20deg);
     width: 10rem;
     height: 10rem;
 
-    @media (min-width: 2000px) {
+    /* @media (min-width: 2200px) {
         bottom: 20%;
         right: 18%;
-    }
+    } */
 
     @media screen and (max-width: 1023px) {
         display: none;
