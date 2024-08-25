@@ -70,7 +70,7 @@ const ArticleTitle = styled.div`
     color: #665B56;
     font-family: "Fraunces", serif;
     font-size: 1.2rem;
-    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     font-style: normal;
     font-weight: 900;
     margin: 0rem 2rem 1rem 2rem;
@@ -88,7 +88,7 @@ const ArticleAuthor = styled.div`
     text-align: left;
     font-family: 'Enriqueta', serif;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0rem 2rem;
     @media screen and (max-width: 1200px) {

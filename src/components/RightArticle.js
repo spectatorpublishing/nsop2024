@@ -113,7 +113,7 @@ const CrownImg = styled.img`
 const ArticleTitle = styled.div`
     color: #665B56;
     font-family: "Fraunces", serif;
-    text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     font-style: normal;
     font-weight: 900;
     font-size: 1.5rem;

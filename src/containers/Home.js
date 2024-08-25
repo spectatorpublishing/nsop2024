@@ -29,10 +29,6 @@ const BackgroundContainer = styled.img`
     top: 0%;
     z-index: 0;
     opacity: 0.15;
-
-    @media only screen and (max-width: 1080px){
-        display: none;
-    }
 `;
 
 const Wrapper = styled.div`

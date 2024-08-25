@@ -9,10 +9,6 @@ export const sections = [
         url: "/uni-news",
     },
     {
-        title: "City",
-        url: "/city-news",
-    },
-    {
         title: "Opinion",
         url: "/opinion",
     },

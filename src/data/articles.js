@@ -13,40 +13,42 @@ export const ac_articles = [
     "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ICAOC2FIYBBTLGNLM34BOFD3BQ.png"
   }
 ];
-
-export const city_news_articles = 
-[
-  {
-    "article_link": "https://www.columbiaspectator.com/city-news/2024/02/13/preserving-a-community-anchor-west-harlems-arts-and-culture-programs-work-to-maintain-and-expand-economic-and-community-building-initiatives/",
-    "article_title": "Preserving a community anchor: West Harlem's arts and culture programs work to maintain and expand economic and community building initiatives",
-    "article_authors": "Chimene Keys",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/W6EB6BKIP5EZRJ57FSYOR2UVWI.JPG"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/city-news/2024/02/13/ethiopian-owned-oasis-juice-bar-expands-to-columbia-business-school-2/",
-    "article_title": "Ethiopian-owned Oasis Juice bar expands to Columbia Business School",
-    "article_authors": "Naomi Baker",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YEAJ4X2SMFCKDJBLYH6R5PFMMM.jpg"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/city-news/2024/02/12/we-act-celebrates-dominican-heritage-and-black-history-month-at-february-meeting/",
-    "article_title": "WE ACT celebrates Dominican Heritage and Black History Month at February meeting",
-    "article_authors": "Uriel Lopez",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UJ2D7UNPNRC4HL2QT4IFC6RZLM.jpg"
-  },
-  {
-    "article_link": "https://www.columbiaspectator.com/city-news/2024/02/11/sidewalk-shed-reinstated-at-409-edgecombe-avenue-historic-harlem-home-of-black-leaders/",
-    "article_title": "Sidewalk shed reinstated at 409 Edgecombe Avenue, historic Harlem home of Black leaders",
-    "article_authors": "Uriel Lopez",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RBIBG2HMVBCNBFWUZTM7KVFPZ4.jpg"
-  },
-];
 export const opinion_articles = [
   {
-    "article_link": "https://www.columbiaspectator.com/opinion/2024/02/12/ask-alma-when-attention-from-rich-besties-tokenizing-peers-and-campus-paparazzi-is-too-much-what-yacht-we-to-do/",
-    "article_title": "Ask Alma: When attention from rich besties, tokenizing peers, and campus paparazzi is too much, what 'yacht’ we to do?",
-    "article_authors": "Spectator Editorial Board",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6KLXODPWG5GSLEXXAF4O4OXMCA.jpg"
+    "article_link": "columbiaspectator.com/opinion/2024/08/25/letter-from-the-editor-what-we-owe-each-other/",
+    "article_title": "Letter from the Editor: What we owe each other",
+    "article_authors": "Colin Roedl",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FEMZ4NNEP5HZNPHN5HKACQL7W4.jpg"
+  },
+  {
+    "article_link": "columbiaspectator.com/opinion/2024/08/25/welcome-to-the-peoples-university-for-palestine/",
+    "article_title": "Welcome to the People’s University for Palestine",
+    "article_authors": "Columbia University Apartheid Divest",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HTRNGV6QWBAY7FT56WGELY32BY.jpg"
+  },
+  {
+    "article_link": "columbiaspectator.com/opinion/2024/08/25/the-worries-of-an-incoming-first-year/",
+    "article_title": "The worries of an incoming first-year",
+    "article_authors": "Nadia Knoblauch",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UFTG5AMM3ZAKXCBZM4SBGKOVY4.jpg"
+  },
+  {
+    "article_link": "columbiaspectator.com/opinion/2024/08/25/ask-alma-and-its-the-same-but-its-the-nsop-edition-so-its-not/",
+    "article_title": "Ask Alma and it’s the same but it’s the NSOP edition so it’s not",
+    "article_authors": "Alma Mater",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/KFWNYONUIVESFGVRAUZ47SUBLQ.PNG"
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/opinion/2024/08/25/on-being-jewish-at-columbia/",
+    "article_title": "On being Jewish at Columbia",
+    "article_authors": "Columbia/Barnard Jewish Voice for Peace",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OUAH7IRFOFDMBNQOUZY433JPZY.jpg"
+  },
+  {
+    "article_link": "columbiaspectator.com/opinion/2024/08/25/does-nsop-actually-care/",
+    "article_title": "Does NSOP actually CARE?",
+    "article_authors": "Melissa Yu",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6GPDCIEXMZGBXGEDERRDCU5HME.jpg"
   },
 ];
   export const audio_articles = [
@@ -77,44 +79,44 @@ export const opinion_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/news/2024/08/22/whos-who-here-are-the-key-columbia-and-barnard-administrators-to-know-in-2024/",
       "article_title": "Who’s who? Here are the key Columbia and Barnard administrators to know in 2024",
-      "article_authors": "Saul Quintanar",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/QLRA36SUHNFDDON5B3KZW5MWKM.jpg"
+      "article_authors": "Joseph Zuloaga",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7DST43OO2FGJNPMTJP4P6PDY7A.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/news/2024/02/13/obama-presidency-oral-history-project-documents-presidency-through-voices-of-administration-activists-and-everyday-people/",
-      "article_title": "Obama Presidency Oral History Project documents presidency through voices of administration, activists, and everyday people",
-      "article_authors": "Sabrina Ticer-Wurr",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FRMPYE2AMJCGHGO3FAEOLIQIHA.png"
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/22/columbia-college-general-studies-begin-transition-from-concentrations-to-minors/",
+      "article_title": "Columbia College, General Studies begin transition from concentrations to minors",
+      "article_authors": "Ayaan Ali",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/A2E4RNVNNBCLTDSPDRKAS4OBFE.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/news/2024/02/14/meeting-the-political-moment-bso-and-boss-at-columbia-and-barnard-over-the-past-five-decades/",
-      "article_title": "‘Meeting the political moment’: BSO and BOSS at Columbia and Barnard over the past five decades",
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/24/one-year-of-rosenbury-a-look-at-the-barnard-presidents-controversial-tenure-so-far/",
+      "article_title": "One year of Rosenbury: A look at the Barnard president’s controversial tenure so far",
       "article_authors": "Maya Stahl",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFYO5LPZBJEB7GGV7VKCXZBS2A.png"
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YQ6KJYLSIFHA7KKFHNVYS7DFWE.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/news/2024/02/08/an-embedded-community-black-pre-law-society-brings-together-black-undergraduates/",
-      "article_title": "‘An embedded community’: Black Pre-Law Society brings together Black undergraduates",
-      "article_authors": "Saul Quintanar",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/QLRA36SUHNFDDON5B3KZW5MWKM.jpg"
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/15/what-to-know-about-katrina-armstrong-columbias-new-interim-president/",
+      "article_title": "What to know about Katrina Armstrong, Columbia’s new interim president",
+      "article_authors": "Shea Vance and Sarah Huddleston",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ECKMWVVQFVDKPNOBYAPT62DTOA.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/news/2024/02/13/obama-presidency-oral-history-project-documents-presidency-through-voices-of-administration-activists-and-everyday-people/",
-      "article_title": "Obama Presidency Oral History Project documents presidency through voices of administration, activists, and everyday people",
-      "article_authors": "Sabrina Ticer-Wurr",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FRMPYE2AMJCGHGO3FAEOLIQIHA.png"
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/20/shafiks-columbia-13-months-and-13-days-of-a-campus-spiraling-into-crisis/",
+      "article_title": "Shafik’s Columbia: 13 months and 13 days of a campus spiraling into crisis",
+      "article_authors": "Sarah Huddleston and Shea Vance",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/IM4QOFONKRG63CCOSPHFHOZSSI.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/news/2024/02/14/meeting-the-political-moment-bso-and-boss-at-columbia-and-barnard-over-the-past-five-decades/",
-      "article_title": "‘Meeting the political moment’: BSO and BOSS at Columbia and Barnard over the past five decades",
-      "article_authors": "Maya Stahl",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFYO5LPZBJEB7GGV7VKCXZBS2A.png"
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/17/as-shafiks-legacy-looms-armstrong-faces-a-tumultuous-road-ahead/",
+      "article_title": "As Shafik’s legacy looms, Armstrong faces a tumultuous road ahead",
+      "article_authors": "Emily Forgash and Joseph Zuloaga",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XWQ7KMOKCRFMFMTUSPTJWIYM4E.jpg"
     },
     {
-      "article_link": "https://www.columbiaspectator.com/news/2024/02/14/meeting-the-political-moment-bso-and-boss-at-columbia-and-barnard-over-the-past-five-decades/",
-      "article_title": "‘Meeting the political moment’: BSO and BOSS at Columbia and Barnard over the past five decades",
-      "article_authors": "Maya Stahl",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SFYO5LPZBJEB7GGV7VKCXZBS2A.png"
+      "article_link": "https://www.columbiaspectator.com/news/2024/08/16/incoming-students-welcome-shafiks-resignation-convey-hope-over-armstongs-appointment/",
+      "article_title": "Incoming students welcome Shafik’s resignation, convey hope over Armstong’s appointment",
+      "article_authors": "William Diep",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UNIXCZB4RFBVBPMKOXYD3MKLQQ.jpg"
     },
   ];
 

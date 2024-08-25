@@ -18,7 +18,6 @@ const Wrapper = styled.div`
 const MiddleArticles = ({ 
     articles,
 }) => {
-    console.log("ARTICLES", articles);
     return (
         <Wrapper>     
             {articles.map((article, index) => 
