@@ -253,26 +253,6 @@ export const credits = {
         "staff_name": "Colin Roedl",
         "title": "Editorial Page Editor"
       },
-      {
-        "staff_name": "Sydney Goldson",
-        "title": "Deputy Editorial Page Editor"
-      },
-      {
-        "staff_name": "Milène Klein",
-        "title": "Deputy Editorial Page Editor"
-      },
-      {
-        "staff_name": "Achilles Frangos",
-        "title": "Deputy Editorial Page Editor"
-      },
-      {
-        "staff_name": "Melanie Cheung",
-        "title": "Deputy Editorial Page Editor"
-      },
-      {
-        "staff_name": "Sofia Matson",
-        "title": "Deputy Editorial Page Editor"
-      },
     ],"Video": [
       {
         "staff_name": "Wyatt King",

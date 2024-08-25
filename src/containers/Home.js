@@ -25,6 +25,7 @@ const BackgroundContainer = styled.img`
     position: absolute;
     object-fit: cover;
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     top: 0%;
     z-index: 0;

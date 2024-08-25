@@ -23,6 +23,7 @@ const BackgroundContainer = styled.img`
     position: absolute;
     object-fit: cover;
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     top: 0%;
     z-index: 0;
@@ -54,7 +55,7 @@ const ArticlesContainer = styled.div`
 
 const Section = ({ header, articles }) => {
     const initialArticle = articles[0];
-    const middleArticles = window.innerWidth <= 1023 && articles.length >= 2 ? articles.slice(1, articles.length - 1) : (articles.length === 2 ? [articles[1]] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null));
+    const middleArticles = window.innerWidth <= 1023 && articles.length >= 2 ? articles.slice(1, articles.length) : (articles.length === 2 ? [articles[1]] : (articles.length > 3 ? articles.slice(1, articles.length - 2) : null));
     const lastArticles = window.innerWidth <= 1023 ? null : (articles.length >= 3 ? articles.slice(articles.length - 2, articles.length) : null);
 
     return (
